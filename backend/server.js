@@ -28,6 +28,7 @@ app.use('/admin',adminRouter)
 
 app.post('/', (req, res) => {
   const { address } = req.body;
+  res.send("Running");
   console.log('Received address:', address);
   
   res.status(200).send('Address received successfully');
